@@ -1,27 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #FFFFFF;
+  --secondary-color: #F3F5F9;
+  --border-color: #DEE1E7;
+  --text-color: #4D5568;
+  --alt-text-color: #7682A0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+[data-theme="dark"] {
+  --primary-color: #1E213A;
+  --secondary-color: #252945;
+  --border-color: #3A416F;
+  --text-color: #E7E7EB;
+  --alt-text-color: #A09FB1;
 }
 
 * {
@@ -30,13 +24,24 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html,
+body {
+  background-color: var(--secondary-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1,h2,h3,h4,h5,h6 {
+  color: var(--text-color);
+}
+
+
+p {
+  color: var(--alt-text-color);
+}
+
+.boxful-bg-primary {
+  background: var(--primary-color);
+}
+
+.bottom-border-color {
+  border-bottom: 1px solid var(--border-color);
 }

@@ -1,6 +1,7 @@
 # Técnologías utilizadas
 
 - Next.js: Es un framework de desarrollo web basado en React que permite crear aplicaciones web de alto rendimiento y estalabilidad.
+- Ant Design: Es una biblioteca de componentes de interfaz de usuario de React de código abierto.
 
 # Pasos para ejecutar el proyecto
 
