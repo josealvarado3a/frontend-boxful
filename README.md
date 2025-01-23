@@ -24,3 +24,7 @@ npm run dev
 ```bash
 http://localhost:3000
 ```
+
+# Esfuerzos adicionales
+
+- En el primer formulario se añadio la selección de municipio de acuerdo al departamento seleccionado. El listado de municipios y departamentos se obtuvo de la documentación técnica que se ofrece actualmente para la Factura Electrónica en El Salvador.

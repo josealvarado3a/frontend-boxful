@@ -30,12 +30,12 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 
-p {
-  color: var(--alt-text-color);
+.alt-text-color {
+  color: var(--alt-text-color) !important;
 }
 
 .boxful-bg-primary {
