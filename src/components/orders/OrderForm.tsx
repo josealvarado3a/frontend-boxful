@@ -64,7 +64,7 @@ export default function OrderForm() {
 
             <Form
                 onSubmitCapture={handleSubmit}
-                className="boxful-bg-primary"
+                className="bg-primary"
                 layout="vertical"
                 name="order"
                 style={{ border: "1px solid #e5e7eb", borderRadius: "10px", padding: "30px" }}
@@ -86,7 +86,7 @@ export default function OrderForm() {
                                 name="fechaProgramada"
                                 rules={[{ required: true, message: "Por favor selecciona una fecha" }]}
                             >
-                                <DatePicker size="large" suffixIcon={<CalendarOutlined />} style={{ width: "100%" }} value={orderForm.scheduledDate} onChange={handleDateChange} />
+                                <DatePicker className="datepicker" size="large" suffixIcon={<CalendarOutlined />} style={{ width: "100%" }} value={orderForm.scheduledDate} onChange={handleDateChange} />
                             </Form.Item>
                         </Col>
                     </Row>
@@ -151,6 +151,7 @@ export default function OrderForm() {
                                 rules={[{ required: true, message: "Por favor selecciona un departamento" }]}
                             >
                                 <Select
+                                    className="selectOption"
                                     placeholder="Selecciona un departamento"
                                     size="large"
                                     onChange={(value) => {
@@ -182,6 +183,7 @@ export default function OrderForm() {
                                 rules={[{ required: true, message: "Por favor selecciona un municipio" }]}
                             >
                                 <Select
+                                    className="selectOption"
                                     placeholder="Selecciona un municipio"
                                     size="large"
                                     value={selectedMunicipality}
@@ -246,6 +248,7 @@ export default function OrderForm() {
                                             <Space.Compact>
                                                 <Col span={8}>
                                                     <Form.Item
+                                                        className="form-item"
                                                         label={<span className="alt-text-color font-semibold">Largo</span>}
                                                         name="largo"
                                                     >
@@ -254,6 +257,7 @@ export default function OrderForm() {
                                                 </Col>
                                                 <Col span={8}>
                                                     <Form.Item
+                                                        className="form-item"
                                                         label={<span className="alt-text-color font-semibold">Alto</span>}
                                                         name="alto"
                                                     >
@@ -262,6 +266,7 @@ export default function OrderForm() {
                                                 </Col>
                                                 <Col span={8}>
                                                     <Form.Item
+                                                        className="form-item"
                                                         label={<span className="alt-text-color font-semibold">Ancho</span>}
                                                         name="ancho"
                                                     >
@@ -274,6 +279,7 @@ export default function OrderForm() {
                                 </Col>
                                 <Col span={3}>
                                     <Form.Item
+                                        className="form-item"
                                         label={<span className="alt-text-color font-semibold">Peso en libras</span>}
                                         name="pesoLb"
                                     >
@@ -308,18 +314,17 @@ export default function OrderForm() {
                             <Row gutter={16}>
                                 <Col span={3}>
                                     <Form.Item
+                                        className="form-item-disabled"
                                         label={<span className="alt-text-color font-semibold">Peso en libras</span>}
-                                        name="pesoLb"
                                     >
-                                        <Input size="large" suffix={<span className="alt-text-color">lb</span>} />
+                                        <Input size="large" suffix={<span className="alt-text-color">lb</span>} disabled/>
                                     </Form.Item>
                                 </Col>
                                 <Col span={11}>
                                     <Form.Item
                                         label={<span className="alt-text-color font-semibold">Contenido</span>}
-                                        name="contenido"
                                     >
-                                        <Input size="large" placeholder="Descripción del bulto" />
+                                        <Input size="large" placeholder="Descripción del bulto" disabled className="input-disabled"/>
                                     </Form.Item>
                                 </Col>
                                 <Col span={10}>
@@ -331,26 +336,26 @@ export default function OrderForm() {
                                             <Space.Compact>
                                                 <Col span={8}>
                                                     <Form.Item
+                                                        className="form-item-disabled"
                                                         label={<span className="alt-text-color font-semibold">Largo</span>}
-                                                        name="largo"
                                                     >
-                                                        <Input size="large" suffix={<span className="alt-text-color">cm</span>} />
+                                                        <Input size="large" suffix={<span className="alt-text-color">cm</span>} disabled/>
                                                     </Form.Item>
                                                 </Col>
                                                 <Col span={8}>
                                                     <Form.Item
+                                                        className="form-item-disabled"
                                                         label={<span className="alt-text-color font-semibold">Alto</span>}
-                                                        name="alto"
                                                     >
-                                                        <Input size="large" suffix={<span className="alt-text-color">cm</span>} />
+                                                        <Input size="large" suffix={<span className="alt-text-color">cm</span>} disabled/>
                                                     </Form.Item>
                                                 </Col>
                                                 <Col span={8}>
                                                     <Form.Item
+                                                        className="form-item-disabled"
                                                         label={<span className="alt-text-color font-semibold">Ancho</span>}
-                                                        name="ancho"
                                                     >
-                                                        <Input size="large" suffix={<span className="alt-text-color">cm</span>} />
+                                                        <Input size="large" suffix={<span className="alt-text-color">cm</span>} disabled/>
                                                     </Form.Item>
                                                 </Col>
                                             </Space.Compact>

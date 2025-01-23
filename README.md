@@ -26,5 +26,5 @@ http://localhost:3000
 ```
 
 # Esfuerzos adicionales
-
+- Se añadio la funcionalidad de temas claros y oscuros. Para cambiar el tema se debe hacer clic en el botón de la esquina superior derecha. El tema seleccionado se guarda en el local storage del navegador.
 - En el primer formulario se añadio la selección de municipio de acuerdo al departamento seleccionado. El listado de municipios y departamentos se obtuvo de la documentación técnica que se ofrece actualmente para la Factura Electrónica en El Salvador.

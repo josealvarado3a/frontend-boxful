@@ -26,25 +26,53 @@
   margin: 0;
 }
 
-html,
-body {
-  background-color: var(--secondary-color);
-}
-
 h1,h2,h3,h4,h5,h6 {
   color: var(--text-color) !important;
 }
 
-.bg-secondary {
+input, textarea {
   background: var(--secondary-color) !important;
+  color: var(--text-color) !important;
+}
+
+::placeholder {
+  color: var(--alt-text-color) !important;
+}
+
+.datepicker {
+  background: var(--secondary-color) !important;
+}
+
+.datepicker span {
+  color: var(--text-color) !important;
+}
+
+.selectOption {
+  background: var(--secondary-color) !important;
+}
+
+.form-item span {
+  background: var(--secondary-color) !important;
+}
+
+[data-theme="dark"] .input-disabled{
+  background: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .form-item-disabled span input {
+  background: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
 }
 
 .alt-text-color {
   color: var(--alt-text-color) !important;
 }
 
-.boxful-bg-primary {
-  background: var(--primary-color);
+.bg-primary {
+  background: var(--primary-color) !important;
 }
 
 .border-color {
