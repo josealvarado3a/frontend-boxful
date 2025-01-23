@@ -8,6 +8,7 @@
   --border-color: #DEE1E7;
   --text-color: #4D5568;
   --alt-text-color: #7682A0;
+  --boder-color-green: #3EBF5B;
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
   --border-color: #3A416F;
   --text-color: #E7E7EB;
   --alt-text-color: #A09FB1;
+  --boder-color-green: #64D7D7;
 }
 
 * {
@@ -33,6 +35,9 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--text-color) !important;
 }
 
+.bg-secondary {
+  background: var(--secondary-color) !important;
+}
 
 .alt-text-color {
   color: var(--alt-text-color) !important;
@@ -40,6 +45,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .boxful-bg-primary {
   background: var(--primary-color);
+}
+
+.border-color {
+  border: 1px solid var(--border-color);
+}
+
+.boder-color-green {
+  border: 1px solid var(--boder-color-green);
 }
 
 .bottom-border-color {
