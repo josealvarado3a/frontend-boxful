@@ -43,9 +43,21 @@ export default function OrderForm() {
     }
 
     // Manejador de envío del formulario
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        console.log(orderForm);
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault(); // Previene el comportamiento por defecto del formulario
+        try {
+            const response = await fetch("http://localhost:3050/orders", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(orderForm),
+            });
+            const data = await response.json();
+            console.log("Response:", data);
+        } catch (error) {
+            console.error("Error:", error);
+        }
     }
 
     // Función para avanzar al siguiente paso

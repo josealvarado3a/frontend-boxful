@@ -28,6 +28,6 @@ export interface iPackage {
     length: string;
     height: string;
     width: string;
-    weight: string;
+    weightPounds: string;
     content: string;
 }
